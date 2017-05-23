@@ -12,7 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    
+        //Sample
+        SBService.shared.setApplicationKey("Your Api Key")
+        
+        SBService.shared.createApplication(withName: "App Name", success: { (s) in
+            
+        }) { (f) in
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
